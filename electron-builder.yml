@@ -1,0 +1,19 @@
+appId: com.echothief.game
+productName: Echo Thief
+copyright: Echo Thief contributors
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**
+  - electron/**
+  - package.json
+mac:
+  category: public.app-category.games
+  target:
+    - target: dmg
+  # Unsigned build: no Apple Developer certificate is required (see README).
+  identity: null
+dmg:
+  title: Echo Thief ${version}
+  artifactName: Echo-Thief-${version}-${arch}.${ext}

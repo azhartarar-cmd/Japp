@@ -203,7 +203,7 @@ export class App {
     }
   }
 
-  private startLevel(i: number): void {
+  startLevel(i: number): void {
     this.levelIndex = i;
     this.world = new World(LEVELS[i], (Date.now() & 0xffff) + 1);
     this.result = null;

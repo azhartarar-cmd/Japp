@@ -115,7 +115,7 @@ export function drawComplete(fb: Framebuffer, menu: Menu, r: Result, name: strin
     drawText(fb, b, 300 - textWidth(b), y, C.WHITE);
   });
   drawTextCentered(fb, r.newBest ? `NEW BEST RANK: ${r.bestRank}` : `BEST RANK: ${r.bestRank}`, 160, 92, r.newBest ? C.YELLOW : C.SLATE);
-  drawTextCentered(fb, 'LOWER NOISE SCORE = BETTER RANK', 160, 102, C.INK);
+  drawTextCentered(fb, 'LOWER NOISE SCORE = BETTER RANK', 160, 102, C.SLATE);
   menu.draw(fb);
 }
 
