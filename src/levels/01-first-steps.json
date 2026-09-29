@@ -1,0 +1,40 @@
+{
+  "id": "01-first-steps",
+  "name": "FIRST STEPS",
+  "hint": [
+    "WASD MOVES. EVERY STEP SENDS OUT A PULSE THAT LIGHTS THE DARK",
+    "HOLD SHIFT TO SNEAK: QUIET, TINY PULSE. SPACE RUNS: LOUD",
+    "CARPET IS SOFT, STONE IS LOUDER. GUARDS ARE BLIND BUT HEAR YOU",
+    "CLICK TO THROW A PEBBLE. GUARDS INVESTIGATE WHERE IT LANDS",
+    "STEAL THE ARTIFACT, THEN REACH THE EXIT. R RESTARTS"
+  ],
+  "pebbles": 4,
+  "ranks": {
+    "S": 30,
+    "A": 55,
+    "B": 90
+  },
+  "map": [
+    "####################################",
+    "###################...##############",
+    "###################...##############",
+    "#,,,,,,######............####......#",
+    "#,,,,,,######............####.A....#",
+    "#,,,,,,######............####......#",
+    "#,S,,,,............................#",
+    "#,,,,,,######............####......#",
+    "#,,,,,,######............####....X.#",
+    "#,,,,,,######............####......#",
+    "####################################"
+  ],
+  "guards": [
+    {
+      "path": [
+        [
+          24,
+          6
+        ]
+      ]
+    }
+  ]
+}

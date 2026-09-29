@@ -13,7 +13,6 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "levels": "node --experimental-strip-types scripts/print-levels.ts",
     "icon": "node scripts/make-icon.mjs",
     "electron": "npm run build && electron .",
     "dist:mac": "npm run build && npm run icon && electron-builder --mac dmg --x64 --arm64 --publish never"

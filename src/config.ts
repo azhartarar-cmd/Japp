@@ -27,7 +27,7 @@ export const LOUDNESS = {
   sneak: 1.2,
   walk: 3.5,
   run: 8,
-  pebble: 6,
+  pebble: 10,
   bell: 26,
   guardStep: 3,
   guardHunt: 4.5,
