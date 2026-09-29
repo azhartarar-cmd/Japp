@@ -1,0 +1,29 @@
+{
+  "name": "echo-thief",
+  "version": "0.1.0",
+  "description": "A stealth puzzle where you can only see by making sound.",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "author": "Echo Thief contributors",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "levels": "node --experimental-strip-types scripts/print-levels.ts",
+    "icon": "node scripts/make-icon.mjs",
+    "electron": "npm run build && electron .",
+    "dist:mac": "npm run build && npm run icon && electron-builder --mac dmg --x64 --arm64 --publish never"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "electron": "^44.0.0",
+    "electron-builder": "^26.0.0",
+    "typescript": "~5.9.2",
+    "vite": "^8.0.0",
+    "vitest": "^5.0.0"
+  }
+}
